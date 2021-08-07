@@ -1,7 +1,21 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+Challenge.create(
+  name: "Summer Chopped Challenge",
+  description: "this is a chopped challenge",
+  rules: "you must use these ingredients"
+)
+Challenge.create(
+  name: "Open Mic Virtual Challenge",
+  description: "Get ready to showcase your skills! Upload a video of your best performance!",
+  rules: "Upload a video of your best performance!"
+)
+Challenge.create(
+  name: "National Pet Month: Cutest Dog Challenge",
+  description: "Lets share the love, show us your adorable fur baby and tell us why they're pawsome!",
+  rules: "Submit one photo and add a blurb about your pet."
+)
+Challenge.create(
+  name: "Winter Ugly Sweater Competition",
+  description: "Don't worry, we won't forward these photos to grandma.",
+  rules: "Submit a photo of you in your ugliest sweater!"
+)
