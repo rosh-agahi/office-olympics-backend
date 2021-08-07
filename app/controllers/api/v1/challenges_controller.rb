@@ -1,5 +1,7 @@
 class Api::V1::ChallengesController < ApplicationController
 
+  before_action :set_challenge, only[:show, :update, :destroy]
+
   def index
     @challenges = Challenge.all
     render json: @challenges
@@ -16,18 +18,15 @@ class Api::V1::ChallengesController < ApplicationController
   end
 
   def show
-    set_challenge
     render json: @challenge
   end
 
   def update
-    set_challenge
     @challenge.update(challenge_params)
     render json: @challege
   end
 
   def destroy
-    set_challenge
     @challenge.destroy
   end
 
