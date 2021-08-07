@@ -8,7 +8,7 @@ class Api::V1::ChallengesController < ApplicationController
   def create
     @challenge = Challenge.new(challenge_params)
     if @challenge.save
-      render json: @challenge 
+      render json: @challenge
     else
       render json: {error: 'Error saving the challenge'}
     end
@@ -16,9 +16,14 @@ class Api::V1::ChallengesController < ApplicationController
   end
 
   def show
+    @challenge = Challenge.find(params[:id])
+    render json: @challenge
   end
 
   def update
+    @challenge = Challenge.find(params[:id])
+    @challenge.update(challenge_params)
+    render json: @challege 
   end
 
   def destroy
