@@ -4,7 +4,8 @@ to generate the rails backend api
 setup github repo
 
 configure Gemfile
-*
+* enable rack-cors ; config/initializers/cors.rb origins *
+
 
 
 ## Models
