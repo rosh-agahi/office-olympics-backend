@@ -16,20 +16,26 @@ class Api::V1::ChallengesController < ApplicationController
   end
 
   def show
-    @challenge = Challenge.find(params[:id])
+    set_challenge
     render json: @challenge
   end
 
   def update
-    @challenge = Challenge.find(params[:id])
+    set_challenge
     @challenge.update(challenge_params)
-    render json: @challege 
+    render json: @challege
   end
 
   def destroy
+    set_challenge
+    @challenge.destroy
   end
 
   private
+
+  def set_challenge
+    @challenge = Challenge.find(params[:id])
+  end
 
   def challange_params
     params.require(:challenge).permit(:name, :description, :rules)
