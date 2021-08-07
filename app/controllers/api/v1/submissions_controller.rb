@@ -9,7 +9,7 @@ class Api::V1::SubmissionsController < ApplicationController
   end
 
   def create
-    @submission = Submission.new(challenge_params)
+    @submission = Submission.new(submission_params)
     if @submission.save
       render json: @submission
     else
@@ -42,7 +42,7 @@ class Api::V1::SubmissionsController < ApplicationController
   end
 
   def submission_params
-    params.require(:submission).permit(:name, :description, :rules)
+    params.require(:submission).permit(:name, :text, :challenge_id)
   end
 
   end
