@@ -1,3 +1,4 @@
 class ChallengeSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :description, :rules
+  has_many :submissions
 end
