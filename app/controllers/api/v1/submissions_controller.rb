@@ -1,7 +1,7 @@
 class Api::V1::SubmissionsController < ApplicationController
 
   before_action :find_challenge
-  before_action :set_submission, only[:show, :update, :destroy]
+  before_action :set_submission, only: [:show, :update, :destroy]
 
   def index
     @submissions = @challenge.submissions
