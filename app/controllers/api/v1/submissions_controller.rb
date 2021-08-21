@@ -4,7 +4,11 @@ class Api::V1::SubmissionsController < ApplicationController
   before_action :set_submission, only: [:show, :update, :destroy]
 
   def index
-    @submissions = @challenge.submissions
+    if @challenge
+      @submissions = @challenge.submissions
+    else
+      @submissions = Submission.all
+    end
     render json: @submissions
   end
 
@@ -34,7 +38,9 @@ class Api::V1::SubmissionsController < ApplicationController
   private
 
   def find_challenge
-    @challenge = Challenge.find(params[:challenge_id])
+    if params[:challege_id]
+      @challenge = Challenge.find(params[:challenge_id])
+    end
   end
 
   def set_submission

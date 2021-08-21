@@ -4,7 +4,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :challenges do
         resources :submissions
-      end 
+      end
+      resources :submissions
     end
   end
 end
