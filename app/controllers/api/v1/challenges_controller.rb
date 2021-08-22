@@ -36,7 +36,7 @@ class Api::V1::ChallengesController < ApplicationController
     @challenge = Challenge.find(params[:id])
   end
 
-  def challange_params
+  def challenge_params
     params.require(:challenge).permit(:name, :description, :rules)
   end
 
