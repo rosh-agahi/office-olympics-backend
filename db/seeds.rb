@@ -8,21 +8,21 @@ Challenge.create(
     challenge_id: 1,
     name: "Hannah",
     text: "Faced off against my brother",
-    videourl: "https://www.youtube.com/watch?v=yih9s9znRbE",
+    videourl: "https://www.youtube.com/embed/yih9s9znRbE",
     votes: 3
   )
   Submission.create(
     challenge_id: 1,
     name: "Emylee",
-    text: "https://www.youtube.com/watch?v=KM1nf9nmbFs",
-    videourl: "",
+    text: "on this episode of Chopped, coronavirus edition...",
+    videourl: "https://www.youtube.com/embed/KM1nf9nmbFs",
     votes: 12
   )
   Submission.create(
     challenge_id: 1,
     name: "Gene",
     text: "All the yum. Look at what I made!",
-    videourl: "https://www.youtube.com/watch?v=iQMoyOIRbb4",
+    videourl: "https://www.youtube.com/embed/iQMoyOIRbb4",
     votes: 0
   )
 
@@ -35,14 +35,14 @@ Challenge.create(
     challenge_id: 2,
     name: "Daniella",
     text: "La Vie en Rose",
-    videourl: "https://www.youtube.com/watch?v=3Ba_WoSZXvw",
+    videourl: "https://www.youtube.com/embed/3Ba_WoSZXvw",
     votes: 23
   )
   Submission.create(
     challenge_id: 2,
     name: "Kurt",
     text: "This song is called Cups",
-    videourl: "https://www.youtube.com/watch?v=6y1aOg_UO_A",
+    videourl: "https://www.youtube.com/embed/6y1aOg_UO_A",
     votes: 14
   )
 
@@ -61,6 +61,6 @@ Challenge.create(
     challenge_id: 4,
     name: "Will",
     text: "Look at my ugly sweater!",
-    videourl: "https://www.youtube.com/watch?v=LHszQ82_FWk",
+    videourl: "https://www.youtube.com/embed/LHszQ82_FWk",
     votes: 2
   )
