@@ -48,7 +48,7 @@ class Api::V1::SubmissionsController < ApplicationController
   end
 
   def submission_params
-    params.require(:submission).permit(:name, :text, :challenge_id)
+    params.require(:submission).permit(:name, :text, :videourl, :challenge_id)
   end
 
   end
