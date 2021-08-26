@@ -9,18 +9,21 @@ Challenge.create(
     name: "Hannah",
     text: "Faced off against my brother",
     videourl: "https://www.youtube.com/watch?v=yih9s9znRbE",
+    votes: 3
   )
   Submission.create(
     challenge_id: 1,
     name: "Emylee",
     text: "https://www.youtube.com/watch?v=KM1nf9nmbFs",
     videourl: "",
+    votes: 12
   )
   Submission.create(
     challenge_id: 1,
     name: "Gene",
     text: "All the yum. Look at what I made!",
     videourl: "https://www.youtube.com/watch?v=iQMoyOIRbb4",
+    votes: 0
   )
 
 Challenge.create(
@@ -33,12 +36,14 @@ Challenge.create(
     name: "Daniella",
     text: "La Vie en Rose",
     videourl: "https://www.youtube.com/watch?v=3Ba_WoSZXvw",
+    votes: 23
   )
   Submission.create(
     challenge_id: 2,
     name: "Kurt",
     text: "This song is called Cups",
     videourl: "https://www.youtube.com/watch?v=6y1aOg_UO_A",
+    votes: 14
   )
 
 Challenge.create(
@@ -57,4 +62,5 @@ Challenge.create(
     name: "Will",
     text: "Look at my ugly sweater!",
     videourl: "https://www.youtube.com/watch?v=LHszQ82_FWk",
+    votes: 2
   )

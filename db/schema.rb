@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_26_020732) do
+ActiveRecord::Schema.define(version: 2021_08_26_030009) do
 
   create_table "challenges", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2021_08_26_020732) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
     t.string "videourl"
+    t.integer "votes"
   end
 
 end
