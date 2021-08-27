@@ -15,7 +15,7 @@ class Api::V1::SubmissionsController < ApplicationController
   def create
     @submission = Submission.new(submission_params)
     if @submission.save
-      render json: @submission
+      render json: @submission.challenge
     else
       render json: {error: 'Error saving the submission'}
     end
