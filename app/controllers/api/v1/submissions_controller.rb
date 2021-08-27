@@ -27,7 +27,7 @@ class Api::V1::SubmissionsController < ApplicationController
   end
 
   def update
-    @submission.update(challenge_params)
+    @submission.update(submission_params)
     render json: @submission.challenge
   end
 
